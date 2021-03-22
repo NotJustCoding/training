@@ -32,7 +32,9 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
     
     public void push(Item item) {
         // 将元素添加到栈顶
-        if (size == a.length) resize(2 * a.length);
+        if (size == a.length) {
+            resize(2 * a.length);
+        }
         a[size++] = item;
     }
     
