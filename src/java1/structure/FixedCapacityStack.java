@@ -1,4 +1,4 @@
-package java;
+package java1.structure;
 
 /**
  * @description: 定容栈
