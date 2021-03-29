@@ -1,4 +1,4 @@
-package java1.structure;
+package java1.search;
 
 /**
  * @description: 二分查找
