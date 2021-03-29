@@ -12,6 +12,11 @@ import java.util.HashMap;
  * @create: 2021-03-29 15:43
  */
 public class LRUCache {
+    private HashMap<Integer, DLinkedNode> cache = new HashMap<>();
+    private int count;
+    private int capacity;
+    private DLinkedNode head, tail;
+    
     private static class DLinkedNode {
         int key;
         int value;
@@ -59,10 +64,7 @@ public class LRUCache {
         return res;
     }
     
-    private HashMap<Integer, DLinkedNode> cache = new HashMap<>();
-    private int count;
-    private int capacity;
-    private DLinkedNode head, tail;
+
     
     public LRUCache(int capacity) {
         this.count = 0;
