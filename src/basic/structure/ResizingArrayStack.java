@@ -1,4 +1,4 @@
-package java1.structure;
+package basic.structure;
 
 import java.util.Iterator;
 

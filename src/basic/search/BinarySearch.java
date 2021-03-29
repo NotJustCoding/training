@@ -1,4 +1,4 @@
-package java1.search;
+package basic.search;
 
 /**
  * @description: 二分查找

@@ -1,4 +1,4 @@
-package java1.sort;
+package basic.sort;
 
 /**
  * @description: 归并排序

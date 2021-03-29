@@ -1,6 +1,6 @@
-package java1.search;
+package basic.search;
 
-import java1.structure.Queue;
+import basic.structure.Queue;
 
 /**
  * @description:
