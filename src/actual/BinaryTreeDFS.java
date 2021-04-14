@@ -60,8 +60,8 @@ public class BinaryTreeDFS {
     }
     
     /***************** 存储父节点**********************/
-    Map<Integer, TreeNode> parent = new HashMap<Integer, TreeNode>();
-    Set<Integer> visited = new HashSet<Integer>();
+    Map<Integer, TreeNode> parent = new HashMap<>();
+    Set<Integer> visited = new HashSet<>();
     
     public void dfs(TreeNode root) {
         if (root.left != null) {

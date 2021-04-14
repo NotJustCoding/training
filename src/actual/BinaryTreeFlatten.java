@@ -1,36 +1,36 @@
 package actual;
 
+import java.util.Arrays;
+import java.util.Stack;
+
 /**
- * @description:
- *
- * 给你二叉树的根结点 root ，请你将它展开为一个单链表：
- *
+ * @description: 给你二叉树的根结点 root ，请你将它展开为一个单链表：
+ * <p>
  * 展开后的单链表应该同样使用 TreeNode ，其中 right 子指针指向链表中下一个结点，而左子指针始终为 null 。
  * 展开后的单链表应该与二叉树 先序遍历 顺序相同。
- *
+ * <p>
  * 示例 1：
  * 输入：root = [1,2,5,3,4,null,6]
  * 输出：[1,null,2,null,3,null,4,null,5,null,6]
- *
+ * <p>
  * 示例 2：
  * 输入：root = []
  * 输出：[]
- *
+ * <p>
  * 示例 3：
  * 输入：root = [0]
  * 输出：[0]
- *
+ * <p>
  * 提示：
  * 树中结点数在范围 [0, 2000] 内
  * -100 <= Node.val <= 100
- *
+ * <p>
  * 进阶：你可以使用原地算法（O(1) 额外空间）展开这棵树吗？
- *
  * @author: ZhaoYang
  * @create: 2021-03-29 19:57
  */
 public class BinaryTreeFlatten {
-    public void flatten(TreeNode root) {
+    public static void flatten(TreeNode root) {
         TreeNode curr = root;
         while (curr != null) {
             if (curr.left != null) {
@@ -45,6 +45,14 @@ public class BinaryTreeFlatten {
             }
             curr = curr.right;
         }
+    }
+    
+    public static void main(String[] args) {
+        String example = "[1,2,5,3,4,null,6,7,null,9,10,null,null,null,11]";
+        TreeNode treeNode = TreeNode.mkTree(example);
+//        flatten(treeNode);
+        Integer[] array = TreeNode.treeParseArray(treeNode);
+        System.out.println(Arrays.toString(array));
     }
     
 }
