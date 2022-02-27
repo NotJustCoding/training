@@ -1,6 +1,7 @@
 package actual;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Stack;
 
 /**
@@ -50,9 +51,7 @@ public class BinaryTreeFlatten {
     public static void main(String[] args) {
         String example = "[1,2,5,3,4,null,6,7,null,9,10,null,null,null,11]";
         TreeNode treeNode = TreeNode.mkTree(example);
-//        flatten(treeNode);
-        Integer[] array = TreeNode.treeParseArray(treeNode);
-        System.out.println(Arrays.toString(array));
+        flatten(treeNode);
     }
     
 }
